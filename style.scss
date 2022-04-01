@@ -5,8 +5,38 @@
 }
 .container {
   display: flex;
+  padding: 0 6%;
   > * {
     width: 50%;
     border: 1px solid black;
+  }
+}
+.register {
+  div {
+    padding: 10px 0 10px 10px;
+    border: 1px solid blue;
+    border-radius: 8px;
+    text-align: center;
+  }
+  form {
+    margin-top: 1rem;
+    padding: 20px;
+    border: 1px solid blue;
+    border-radius: 8px;
+    > * {
+      display: block;
+      margin-bottom: 1rem;
+    }
+    input,
+    button {
+      outline: none;
+      width: 100%;
+      padding: 15px;
+      border-radius: 8px;
+      border: 1px solid;
+    }
+    .terms {
+      text-align: center;
+    }
   }
 }
