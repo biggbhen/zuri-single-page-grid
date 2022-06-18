@@ -2,26 +2,54 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+body {
+  background: url('./images-20220618T152049Z-001/images/bg-intro-mobile.png'),
+    rgba($color: #ff7978, $alpha: 0.7);
 }
 .container {
+  margin-top: 6rem;
   display: flex;
   padding: 0 6%;
+
   > * {
     width: 50%;
-    border: 1px solid black;
+    // border: 1px solid black;
+  }
+}
+.about {
+  display: flex;
+  align-items: center;
+  div {
+    padding: 40px;
+    h1 {
+      font-size: clamp(2.2rem, 5vw, 2.5rem);
+      color: #fff;
+    }
+    p {
+      color: #fff;
+    }
   }
 }
 .register {
+  padding: 40px 40px 0 20px;
   div {
+    background-color: #5d54a3;
+    box-shadow: 2px 4px 5px 0px rgba(0, 0, 0, 0.6);
     padding: 10px 0 10px 10px;
-    border: 1px solid blue;
+    // border: 1px solid blue;
     border-radius: 8px;
     text-align: center;
+    p {
+      color: #fff;
+    }
   }
   form {
+    background-color: #fff;
     margin-top: 1rem;
-    padding: 20px;
-    border: 1px solid blue;
+    padding: 25px;
+    // border: 1px solid blue;
     border-radius: 8px;
     > * {
       display: block;
@@ -33,10 +61,23 @@
       width: 100%;
       padding: 15px;
       border-radius: 8px;
-      border: 1px solid;
+      border: 1px solid black;
+    }
+    button {
+      background-color: #37cc8a;
+      margin-bottom: 0.5rem;
+      color: #fff;
+      font-weight: 700;
+      border: none;
+      box-shadow: 2px 4px 5px 0px rgba(0, 0, 0, 0.6);
     }
     .terms {
       text-align: center;
+      color: #d7d5e0;
+      font-size: clamp(0.75rem, 1.5vw, 0.85rem);
+      span {
+        color: #ffb7b4;
+      }
     }
   }
 }
